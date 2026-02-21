@@ -50,5 +50,5 @@ jobs:
             venv/bin/pip install --upgrade pip
             venv/bin/pip install -r requirements.txt
             pkill -f server.py || true
-            nohup venv/bin/python server.py > app.log 2>&1 &
+            nohup venv/bin/python app.py > app.log 2>&1 &
           EOF
